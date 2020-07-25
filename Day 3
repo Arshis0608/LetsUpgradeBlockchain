@@ -1,1 +1,32 @@
+pragma solidity ^0.4.17;
 
+contract Land{
+    
+  string public owner;
+  string public value;
+  string public area;
+  string public location;
+  
+  function Land(string newOwner, string newValue,string newArea, string newLocation)public { 
+      owner= newOwner;
+      value= newValue;
+      area= newArea;
+      location= newLocation;
+  }
+  
+ function setDetails(string newOwner, string newValue,string newArea, string newLocation)public {
+     owner= newOwner;
+     value= newValue;
+     area= newArea;
+     location= newLocation;
+  }
+   
+   function getDetails(string newOwner, string newValue,string newArea, string newLocation)public {
+     owner= newOwner;
+     value= newValue;
+     area= newArea;
+     location= newLocation;  
+   }
+}
+  
+  
